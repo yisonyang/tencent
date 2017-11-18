@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>校园一卡通</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS  -->
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <style>
+        body {
+            font-family: "Microsoft Yahei", "helvetica", "Arial"
+        }
+        
+        .navbar-li button {
+            font-size: 24px;
+            padding: 4px 8px;
+            line-height: .7;
+            border: none;
+            background: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="brand">
+                <a href="index.html"><!-- <img src="assets/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"> -->校园一卡通</a>
+            </div>
+            <div class="container-fluid">
+                <div id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-li">
+                            <a type="button" class=" btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png" class="img-circle" alt="Avatar"> 吴宇峰 <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
+                                <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+                                <li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
+                                <li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+                            </ul> -->
+                        </li>
+                        <!-- <li>
+                            <a class="update-pro" href="#downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- LEFT SIDEBAR -->
+        <div id="sidebar-nav" class="sidebar" style="padding-top:60px;">
+            <div class="sidebar-scroll">
+                <nav>
+                    <ul class="nav">
+                        <li>
+                            <a href="#subPages1" data-toggle="collapse" class="collapsed"><i class="fa fa-edit"></i> <span>卡务公告</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                            <div id="subPages1" class="collapse ">
+                                <ul class="nav">
+
+                                    <li><a href="ka-news.html" class="">新闻早知道</a></li>
+                                    <li><a href="ka-lose.html" class="">遗失公告</a></li>
+
+                                    <li><a href="ka-download.html" class="">文档下载</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#subPages2" data-toggle="collapse" class="active"><i class="fa fa-edit"></i> <span>个人资料</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                            <div id="subPages2" class="collapse in">
+                                <ul class="nav">
+                                    <li><a href="ge-message.html" class="active">个人信息</a></li>
+                                    <li><a href="ge-cardMessage.html" class="">一卡通信息</a></li>
+                                    <li><a href="ge-cardLoss.html" class="">一卡通挂失</a></li>
+                                    <li><a href="ge-data.html" class="">数据分析</a></li>
+                                    <li><a href="ge-bathNumber.html" class="">浴室人数</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- END LEFT SIDEBAR -->
+        <!-- MAIN -->
+        <div class="main" style="padding-top:60px;">
+            <!-- MAIN CONTENT -->
+            <div class="main-content" style="padding:0;">
+                <div class="container-fluid">
+                    <h3 style="padding-left:2px;margin:15px 0px;">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span class="page-title">个人资料</span>
+                        <!-- <button class="btn btn-success pull-right">补助导入</button> -->
+                    </h3>
+                    <!-- 办公信息begin -->
+                    <div class="panel">
+
+                        <div class="panel-body no-padding">
+                            <table class="table">
+                                <thead style="background:#1CAF9A;color:white;">
+                                    <tr>
+                                        <th colspan="2">个人信息</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>姓名：<span>xx</span></td>
+                                        <td style="width: 50%;">性别：<span>xx</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>国籍：<span>中华人民共和国</span></td>
+                                        <td>民族：<span>汉</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>身份：<span>本科生</span></td>
+                                        <td>学号：<span>2013090909090</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>学位：<span></span></td>
+                                        <td>院系：<span>计算机系</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>班级：<span>计科1200</span></td>
+                                        <td>
+                                            手机号：<span>155555555555</span>
+                                            <!-- <input type="text" class="lyhide">
+                          <button class="btn btn-sm btn-info edit">修改</button>
+                          
+                          <button class="btn btn-sm btn-warn resert lyhide">取消</button>
+                          <button class="btn btn-sm btn-danger submit lyhide">确认修改</button> --></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 办公信息end -->
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="container-fluid">
+    </div>
+
+    </div>
+    <!-- END WRAPPER -->
+    <!-- Javascript -->
+    <script src="assets/vendor/jquery/jquery-1.12.0.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="assets/vendor/chartist/js/chartist.min.js"></script>
+    <script src="assets/scripts/klorofil-common.js"></script>
+    <script src="assets/scripts/Tabullet.js"></script>
+    <script>
+        $(function() {
+            $("td").css("padding-left", "8px");
+            /* Tabullets begins */
+            var source = [{
+                id: 1,
+                site: "教十303",
+                time: "7.20",
+                tele: "12345678910"
+            }, {
+                id: 2,
+                site: "教十303",
+                time: "7.234",
+                tele: "12345678910"
+            }, ];
+
+            function resetTabullet() {
+                $("#table").tabullet({
+                    data: source,
+                    action: function(mode, data) {
+                        console.dir(mode);
+                        if (mode === 'save') {
+                            source.push(data);
+                        }
+                        if (mode === 'edit') {
+                            for (var i = 0; i < source.length; i++) {
+                                if (source[i].id == data.id) {
+                                    source[i] = data;
+                                }
+                            }
+                        }
+                        if (mode == 'delete') {
+                            for (var i = 0; i < source.length; i++) {
+                                if (source[i].id == data) {
+                                    source.splice(i, 1);
+                                    break;
+                                }
+                            }
+                        }
+                        resetTabullet();
+                    }
+                });
+            }
+
+            resetTabullet();
+            /* Tabullets ends */
+
+        });
+    </script>
+</body>
+
+</html>
